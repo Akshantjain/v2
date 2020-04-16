@@ -1,11 +1,12 @@
 .projects-section {
-    padding-top: 4.5%;
-    padding-bottom: 3%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     background: url("../img/project_section.png");
     background-color: rgba(17, 17, 17, 0.582);
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .duration   {
@@ -28,7 +29,6 @@ div.description  {
 
 div.project-description {
     overflow: hidden;
-    /* height: 0px; */
     transition: height 0.5s;
 }
 
@@ -36,8 +36,32 @@ div.project-description {
     height: 0px;
 }
 
-.expand {
+.encyption_project {
+    height: 150px;
+}
+
+.covid_tracker {
+    height: 150px;
+}
+
+.home_security {
     height: 400px;
+}
+
+.personal_v1 {
+    height: 150px;
+}
+
+.tic_tac_toe {
+    height: 150px;
+}
+
+.baccarat_game {
+    height: 90px;
+}
+
+.more_projects {
+    height: 500px;
 }
 
 div.description ul   {
@@ -73,7 +97,7 @@ div.horizontal-scroll a  {
     display: none;
 }
 
-.each {
+.projects-section .each {
     background-color: rgba(0, 0, 0, 0.322);
     border-radius: 4px;
     box-shadow: 0 5px 5px 0 rgba(0,0,0,.75);
@@ -81,15 +105,15 @@ div.horizontal-scroll a  {
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 
-.project-headings {
+.projects-section .clickable-section {
     cursor: pointer;
 }
 
-.each:hover {
-    transform: translate(0px, -1.5px);
+.projects-section .each:hover {
+    transform: translate(0px, -2.5px);
 }
 
-.each h4    {
+.projects-section .each h4    {
     color: rgba(235, 235, 235, 0.6);
 }
 
@@ -122,6 +146,10 @@ div.horizontal-scroll a  {
     background-image: url("../img/folder.png");
 }
 
+.web {
+    background-image: url("../img/web.png");
+}
+
 .each .fa-github {
     font-size: 30px;
     color: ghostwhite;
@@ -142,4 +170,8 @@ div.horizontal-scroll a  {
 
 .external {
     background-image: url("../img/external.png");
+}
+
+.paper {
+    background-image: url("../img/paper.png");
 }

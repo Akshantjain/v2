@@ -12,16 +12,31 @@
     <section>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="author" content="Akshant Jain">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <meta name="google-site-verification" content="4NVr2JGiZTc1akpibiEpmsh9afnt5nRSaRHVdGnh2-k" />
 
-        <title>Akshant Jain | Software and Front End Developer</title>
+        <meta name="description"
+            content="Computer Science Student, Aspiring Software and Front End Developer">
+        <meta name="keywords" content="design, development, web, akshantjain, akshant, jain, software, student, senior">
+
+        <title>Akshant Jain | Developer</title>
 
         <!-- Bootstrap core CSS -->
         <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163496746-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-163496746-1');
+        </script>
+
 
         <!-- Custom fonts for this template -->
         <!-- <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet"> -->
@@ -42,6 +57,7 @@
         <link href="css/projects_style.css" rel="stylesheet">
         <link href="css/signup_style.css" rel="stylesheet">
         <link href="css/skills_style.css" rel="stylesheet">
+        <link href="css/resume_style.css" rel="stylesheet">
     </section>
 </head>
 
@@ -66,10 +82,10 @@
                         <a class="nav-link js-scroll-trigger" href="#skills">Coursework & Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+                        <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+                        <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -88,20 +104,12 @@
                 <h2 class="text-white mx-auto">Aspiring Software and Front End Developer</h2>
             </div>
         </div>
-        <div class="container d-flex h-25  pb-5 align-items-end" id="button-container">
-            <div class="mx-auto text-center" id="scroll">
-                <a href="#about" class="btn btn-primary js-scroll-trigger">
-                    <span></span>
-                    <p class="shining">about me</p>
-                </a>
-            </div>
-        </div>
     </header>
 
     <!-- About Section -->
     <section id="about" class="about-section contents">
         <div id="container" class="container-fluid">
-            <h1 class=" text-left text-uppercase heads">About Me</h1>
+            <h1 class=" text-left text-uppercase heads">About Me <span style="font-size: 0.8rem;">Who am I</span></h1>
             <div class="row m-3">
                 <div class="about-intro pt-2">
                     <p class="name text-white mb-2" style=" font-family: 'Source Sans Pro', sans-serif;">Hi! I'm Akshant Jain!</h2>
@@ -125,43 +133,31 @@
                     cursus finibus tellus ac congue. Cras luctus consequat enim, ac vehicula risus. Sed a nisl non velit semper placerat
                     vitae ut neque.
                     </p>
-                    <!-- <p class="text-white-50 mb-3 text-left">
-                    </p> -->
-                </div>
-                <!-- <div class="headshot">
-                     <div class="headshot" id="myImage"></div>
-                </div> -->
-            </div>
-            <div class="container d-flex h-25 align-items-end">
-                <div class="mx-auto text-center skills mt-1" id="scroll">
-                    <a href="#skills" class="btn btn-primary bg-transparent js-scroll-trigger">
-                        <span></span>
-                        <p class="shining mb-3">Coursework & Skills</p>
-                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Coursework & Skills Section -->
-    <section id="skills" class="skill-section contents" data-0="background-position:0px -1080px;" data-100000="background-position:0px -10000px;">
-        <div id="skrollr-body" class="container-fluid">
-            <h1 class="text-left text-uppercase heads mb-2">Courserowk and Skills</h1>
+    <section id="skills" class="skill-section contents">
+        <div class="container-fluid">
+            <h1 class="text-left text-uppercase heads mb-2">Coursework and Skills <span style="font-size: 0.8rem;">What I Know</span></h1>
             <div class="row m-auto">
                 <div class="wrapper mb-4 mt-3">
                     <div class="row mt-4 mb-3 pl-3 container-fluid do_center">
                         <div class="img idea"></div>
                         <h4 class="text-uppercase d-inline-block text-white">knowledge: <span class="line" style="width: 80%;"></span></h4>
-                        <i class="devicon-java-plain-wordmark java"></i>
-                        <i class="devicon-cplusplus-plain cplusplus"></i>
-                        <i class="fab fa-python python"></i>
-                        <i class="devicon-mysql-plain-wordmark mysql"></i>
-                        <i class="devicon-android-plain-wordmark android"></i>
-                        <i class="fab fa-html5 html"></i>
-                        <i class="fab fa-css3-alt css"></i>
-                        <i class="fab fa-js javascript"></i>
-                        <i class="fab fa-bootstrap bootstrap"></i>
-                        <i class="devicon-github-plain-wordmark git"></i>
+                        <i id="java"    onmouseenter="colorin(0)" onmouseout="colorout(0)" class="devicon-java-plain-wordmark java"></i>
+                        <i id="cpp"     onmouseenter="colorin(1)" onmouseout="colorout(1)" class="devicon-cplusplus-line cplusplus"></i>
+                        <i id="python"  onmouseenter="colorin(2)" onmouseout="colorout(2)" class="devicon-python-plain-wordmark python"></i>
+                        <i id="mysql"   class="devicon-mysql-plain-wordmark mysql"></i>
+                        <i id="android" onmouseenter="colorin(3)" onmouseout="colorout(3)" class="devicon-android-plain-wordmark android"></i>
+                        <i id="html"    onmouseenter="colorin(4)" onmouseout="colorout(4)" class="devicon-html5-plain-wordmark html"></i>
+                        <i id="css"     onmouseenter="colorin(5)" onmouseout="colorout(5)" class="devicon-css3-plain-wordmark css"></i>
+                        <i id="jscript" class="devicon-javascript-plain javascript"></i>
+                        <i id="boot"    class="devicon-bootstrap-plain-wordmark bootstrap"></i>
+                        <i id="react"   onmouseenter="colorin(6)" onmouseout="colorout(6)" class="devicon-react-original-wordmark react"></i>
+                        <i id="gitlogo" onmouseenter="colorin(7)" onmouseout="colorout(7)" class="devicon-github-plain-wordmark git"></i>
                     </div>
                     <span class="line line-center line2" style="width: 80%; height: 1px;"></span>
                     <div class=" mt-5 row">
@@ -184,7 +180,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col pb-2 pl-5 pr-3 pt-5 text-white border-right border-secondary">
+                        <div class="col pt-5 pl-5 pr-3 pb-2 text-white border-right border-secondary">
                             <div class="img math"></div>
                             <h4 class="text-uppercase d-inline-block">Mathematics<span class="line" style="width: 80%;"></span></h4>
                             <p class="para pt-2 pl-2 pr-2 text-white-50">
@@ -204,173 +200,157 @@
                     </div>
                 </div>
             </div>
-            <div class="container d-flex h-25 align-items-end">
-                <div class="mx-auto text-center skills mt-1" id="scroll">
-                    <a href="#projects" class="btn btn-primary bg-transparent js-scroll-trigger">
-                        <span></span>
-                        <p class="shining">Projects</p>
-                    </a>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section contents ">
+        <div class="container-fluid">
+            <h1 class="text-left text-uppercase heads mb-2">Experience <span style="font-size: 0.8rem;">What I Have learned</span></h1>
+            <div class="row">
+                <div class="wrapper mb-2 mt-1">
+                    <div class="container each">
+                        <div class="row py-3 mx-3">
+                            <div class="col-5">
+                                <div class="img college"></div>
+                                <h5 class="text-uppercase d-inline-block text-white">Education<span class="line" style="width: 80%;"></span></h5>
+                            </div>
+                            <div class="col-7 mt-1 education">
+                                <h5 class="text-white mb-0">University of Illinois at Chicago (UIC)</h5>
+                                <span class="line" style="width: 50%; height: 1px;"></span>
+                                <p class="text-white ml-1 mb-0">
+                                    Bachelor of Science in Computer Science with Minor in Mathematics
+                                </p>
+                                <p class="text-white-50 ml-3">
+                                    Junior Year<br>
+                                    Graduation Expected: May 2021<br>
+                                    Honors: Dean's List
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="wrapper">
+                    <div class="container each">
+                        <div class="row py-3 mx-3">
+                            <div class="col-5">
+                                <div class="img course"></div>
+                                <h5 class="text-uppercase d-inline-block text-white">Coursework<span class="line"
+                                        style="width: 80%;"></span></h5>
+                            </div>
+                            <div class="col-7 mt-1 coursework">
+                                <h5 class="text-white mb-0">University of Illinois at Chicago (UIC)</h5>
+                                <span class="line" style="width: 50%; height: 1px;"></span>
+                                <ul class="text-white-50" style="list-style-type: square;">
+                                    <li>Program Design I and Program Design II</li>
+                                    <li>Data Structures</li>
+                                    <li>Programming Design and Implementations</li>
+                                    <li>Software and Computer Design</li>
+                                    <li>Web and Multimedia Technology</li>
+                                    <li>Software Development for Mobile Platforms</li>
+                                </ul>
+
+                                <h5 class="text-white mb-0">Harvard University Online Course</h5>
+                                <span class="line" style="width: 40%; height: 1px;"></span>
+                                <ul class="text-white-50" style="list-style-type: square;">
+                                    <li>CS50: Introduction to Computer Science</li>
+                                    <li>CS50: Introduction to Artificial Intelligence with Python</li>
+                                </ul>
+
+                                <h5 class="text-white mb-0">Coursera Online Courses</h5>
+                                <span class="line" style="width: 30%; height: 1px;"></span>
+                                <ul class="text-white-50" style="list-style-type: square;">
+                                    <li>Front-End Web Development </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="wrapper">
+                        <div class="container each">
+                        <div class="row py-3 mx-3">
+                            <div class="col-5">
+                                <div class="img connect"></div>
+                                <h5 class="text-uppercase d-inline-block text-white">Professional Affiliations<span class="line"
+                                        style="width: 80%;"></span></h4>
+                            </div>
+                            <div class="col-7 mt-1 connections">
+                                <h5 class="text-white mb-0">Association for Computing Machinery (ACM)</h5>
+                                <span class="line" style="width: 50%; height: 1px;"></span>
+                                <p class="text-white-50 mt-1 ml-1 mb-0">
+                                    Member of ACM UIC and International since January 2020.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects-section contents" data-0="background-position:0px 0px;" data-100000="background-position:0px -10000px;">
-        <div id="skrollr-body" class="container-fluid">
-            <h1 class="text-left text-uppercase heads mb-2">Projects</h1>
+    <section id="projects" class="projects-section contents">
+        <div class="container-fluid">
+            <h1 class="text-left text-uppercase heads mb-2">Projects <span style="font-size: 0.8rem;">What I have done</span></h1>
             <div class="row">
                 <div class="wrapper container mb-3 mt-3">
-                    <div class="row container each pt-4 pb-3 px-5">
-                        <div class="container project-headings" onclick="expandFunction(0)">
+                    <div class="row container each pt-3 pb-2 px-5 clickable-section" onclick="expandFunction(0)">
+                        <div class="container">
                             <div class="img webapp ml-4 mr-4"></div>
                             <h4 class="font-weight-light pl-2 d-inline-block" style="margin: 0px;">Advanced Encryptor</h4>
                             <p class="duration ml-3">April 2020 - Present</p>
-                            <i class="fab fa-github"></i>
-                            <div class="img2 external"></div>
+                            <a href="https://github.com/Akshantjain/AdvancedEncryptor" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="http://akshantjain.me/AdvancedEncryptor/" target="_blank"><div class="img2 external"></div></a>
+                            <a href="https://akshantjain.github.io" target="_blank"><div class="img2 paper"></div></a>
                         </div>
-                        <div id="home_security" class="container project-description minimize">
+                        <div class="container project-description minimize">
                             <div class="description text-justify">
                                 <ul>
-                                    <li>This project is a part of <em>Computer Design Course</em> (CS 362) of UIC from <em>Fall 2019</em>
-                                        Semester.
-                                    </li>
-                                    <li>This was a group project of three members. </li>
-                                    <li>The main idea of the project was to design and create a prototype of home security system.</li>
-                                    <li>The prototype is able to detect threats which could take place in a house in your absence.</li>
-                                    <li>Potential threats which system could detect includes theft, invade, smoke, fire, gas andlights.</li>
-                                    <li>The system is protected by a password which is you need to set every time you enable the system.</li>
-                                    <li>The security system is coded in C++ on Arduino and other hardwares.</li>
+                                    <li>The product would be able to encrypt large amount of data which could be decrypted later when required.</li>
+                                    <li>The data could be encrypted in different security levels as specified by the user.</li>
+                                    <li>Working in a group of two members, where I am responsible for front end and some of back end development.</li>
+                                    <li>The project is in development stage and is expected to launch the first version by June 2020.</li>
+                                    <li>We are expecting to launch the product on cross platforms by the end of September 2020.</li>
                                 </ul>
-                            </div>
-                        
-                            <div class="mb-4 ml-3">
-                                <p class="m-0 mb-1 p-0 text-left"><span class="fa fa-tools px-1 "></span>Hardware and Concepts used:</p>
-                                <div class="horizontal-scroll px-2">
-                                    <a target="_blank" href="https://learn.sparkfun.com/tutorials/what-is-an-arduino/all">Arduino UNO (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/Tutorial/MasterWriter">I2C
-                                        Communication</a>
-                                    <a target="_blank" href="https://learn.adafruit.com/lesson-0-getting-started/breadboard">
-                                        BreadBoard (3)</a>
-                                    <a target="_blank" href="https://learn.pimoroni.com/tutorial/170pt-projects/anatomy-of-a-mini-breadboard">
-                                        Mini BreadBoard (1)</a>
-                                    <a target="_blank" href="https://en.wikipedia.org/wiki/Nine-volt_battery"> Batteries (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/Tutorial/HelloWorld"> 16x2 LCD Display
-                                        (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/tutorial/blink"> LED Lights (4)</a>
-                                    <a target="_blank"
-                                        href="https://www.instructables.com/id/How-to-use-a-photoresistor-or-photocell-Arduino-Tu/">
-                                        Photoresistor (1)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/tutorial/potentiometer"> Potentiometer
-                                        (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/tutorial/button"> Pin Buttons (2)</a>
-                                    <a target="_blank" href="https://www.tutorialspoint.com/arduino/arduino_ultrasonic_sensor.htm">Ultrasonic
-                                        Sensor (1)</a>
-                                    <a target="_blank" href="https://playground.arduino.cc/Code/Keypad/">4x4 Keypad (1)</a>
-                                    <a target="_blank"
-                                        href="https://create.arduino.cc/projecthub/Aritro/smoke-detection-using-mq-2-gas-sensor-79c54a">Smoke
-                                        Sensor (1)</a>
-                                    <a target="_blank"
-                                        href="https://create.arduino.cc/projecthub/SURYATEJA/use-a-buzzer-module-piezo-speaker-using-arduino-uno-89df45">
-                                        Buzzers (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/reference/wire"> Connecting Wires
-                                        (~40)</a>
-                                    <a target="_blank" href="https://learn.adafruit.com/adafruit-arduino-lesson-2-leds/resistors"> Resistors
-                                        (8)</a>
-                                </div>
-                            </div>
-                            <div class="mb-4 ml-3">
-                                <p class="m-0 mb-1 p-0 text-left"><span class="px-1 fa fa-file-alt"></span>Project Documents:</p>
-                                <div class="horizontal-scroll px-2">
-                                    <a href="http://bit.ly/2SZ3C83" target="_blank">Initial Team and Idea</a>
-                                    <a href="http://bit.ly/3c8AoeG" target="_blank">Team and Project Contract</a>
-                                    <a href="http://bit.ly/2wIGSAx" target="_blank">Updated Design Document</a>
-                                    <a href="http://bit.ly/2SY0FEQ" target="_blank">Project Presentation</a>
-                                    <a href="http://bit.ly/2PrJo4V" target="_blank">Final Design Document</a>
-                                </div>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="row container each pt-4 pb-3 px-5">
-                        <div class="container project-headings" onclick="expandFunction(1)">
+                    <div class="row container each pt-3 pb-2 px-5 clickable-section" onclick="expandFunction(1)">
+                        <div class="container">
                             <div class="img webapp ml-4 mr-4"></div>
                             <h4 class="font-weight-light pl-2 d-inline-block" style="margin: 0px;">COVID-19 Tracker</h4>
                             <p class="duration ml-3">April - May 2020</p>
-                            <i class="fab fa-github"></i>
-                            <div class="img2 external"></div>
+                            <a href="https://github.com/Akshantjain/it202-big-project" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://akshantjain.github.io" target="_blank"><div class="img2 external"></div></a>
                         </div>
-                        <div id="home_security" class="container project-description minimize">
+                        <div class="container project-description minimize">
                             <div class="description text-justify">
                                 <ul>
-                                    <li>This project is a part of <em>Computer Design Course</em> (CS 362) of UIC from <em>Fall 2019</em>
-                                        Semester.
-                                    </li>
-                                    <li>This was a group project of three members. </li>
-                                    <li>The main idea of the project was to design and create a prototype of home security system.</li>
-                                    <li>The prototype is able to detect threats which could take place in a house in your absence.</li>
-                                    <li>Potential threats which system could detect includes theft, invade, smoke, fire, gas andlights.</li>
-                                    <li>The system is protected by a password which is you need to set every time you enable the system.</li>
-                                    <li>The security system is coded in C++ on Arduino and other hardwares.</li>
+                                    <li>The web app provides data about the COVID-19 cases worldwide.</li>
+                                    <li>The main idea of the project was provide the visitors with the number of cases for each country.</li>
+                                    <li>The data provides the data with graphical visualization to the visitors.</li>
+                                    <li>The app/website allows visitor to filter countries.</li>
+                                    <li>The project is expected to be launched by the start of May 2020.</li>
                                 </ul>
-                            </div>
-                        
-                            <div class="mb-4 ml-3">
-                                <p class="m-0 mb-1 p-0 text-left"><span class="fa fa-tools px-1 "></span>Hardware and Concepts used:</p>
-                                <div class="horizontal-scroll px-2">
-                                    <a target="_blank" href="https://learn.sparkfun.com/tutorials/what-is-an-arduino/all">Arduino UNO (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/Tutorial/MasterWriter">I2C
-                                        Communication</a>
-                                    <a target="_blank" href="https://learn.adafruit.com/lesson-0-getting-started/breadboard">
-                                        BreadBoard (3)</a>
-                                    <a target="_blank" href="https://learn.pimoroni.com/tutorial/170pt-projects/anatomy-of-a-mini-breadboard">
-                                        Mini BreadBoard (1)</a>
-                                    <a target="_blank" href="https://en.wikipedia.org/wiki/Nine-volt_battery"> Batteries (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/Tutorial/HelloWorld"> 16x2 LCD Display
-                                        (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/tutorial/blink"> LED Lights (4)</a>
-                                    <a target="_blank"
-                                        href="https://www.instructables.com/id/How-to-use-a-photoresistor-or-photocell-Arduino-Tu/">
-                                        Photoresistor (1)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/tutorial/potentiometer"> Potentiometer
-                                        (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/tutorial/button"> Pin Buttons (2)</a>
-                                    <a target="_blank" href="https://www.tutorialspoint.com/arduino/arduino_ultrasonic_sensor.htm">Ultrasonic
-                                        Sensor (1)</a>
-                                    <a target="_blank" href="https://playground.arduino.cc/Code/Keypad/">4x4 Keypad (1)</a>
-                                    <a target="_blank"
-                                        href="https://create.arduino.cc/projecthub/Aritro/smoke-detection-using-mq-2-gas-sensor-79c54a">Smoke
-                                        Sensor (1)</a>
-                                    <a target="_blank"
-                                        href="https://create.arduino.cc/projecthub/SURYATEJA/use-a-buzzer-module-piezo-speaker-using-arduino-uno-89df45">
-                                        Buzzers (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/reference/wire"> Connecting Wires
-                                        (~40)</a>
-                                    <a target="_blank" href="https://learn.adafruit.com/adafruit-arduino-lesson-2-leds/resistors"> Resistors
-                                        (8)</a>
-                                </div>
-                            </div>
-                            <div class="mb-4 ml-3">
-                                <p class="m-0 mb-1 p-0 text-left"><span class="px-1 fa fa-file-alt"></span>Project Documents:</p>
-                                <div class="horizontal-scroll px-2">
-                                    <a href="http://bit.ly/2SZ3C83" target="_blank">Initial Team and Idea</a>
-                                    <a href="http://bit.ly/3c8AoeG" target="_blank">Team and Project Contract</a>
-                                    <a href="http://bit.ly/2wIGSAx" target="_blank">Updated Design Document</a>
-                                    <a href="http://bit.ly/2SY0FEQ" target="_blank">Project Presentation</a>
-                                    <a href="http://bit.ly/2PrJo4V" target="_blank">Final Design Document</a>
-                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row container each pt-4 pb-3 px-5">
-                        <div class="container project-headings" onclick="expandFunction(2)">
+                    <div class="row container each pt-3 pb-2 px-5 clickable-section" onclick="expandFunction(2)">
+                        <div class="container">
                             <div class="img security ml-4 mr-4"></div>
                             <h4 class="font-weight-light pl-2 d-inline-block" style="margin: 0px;">Home Security System</h4>
                             <p class="duration ml-3">September - December 2019</p>
-                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/Akshantjain/Home-Security-System" target="_blank"><i class="fab fa-github"></i></a>
                         </div>
-                        <div id="home_security" class="container project-description minimize">
+                        <div class="container project-description minimize">
                             <div class="description text-justify">
                                 <ul>
                                     <li>This project is a part of <em>Computer Design Course</em> (CS 362) of UIC from <em>Fall 2019</em>
@@ -433,154 +413,104 @@
                         </div>
                     </div>
 
-                    <div class="row container each pt-4 pb-3 px-5">
-                        <div class="container project-headings" onclick="expandFunction(3)">
+                    <div class="row container each pt-3 pb-2 px-5 clickable-section" onclick="expandFunction(3)">
+                        <div class="container">
+                            <div class="img web ml-4 mr-4"></div>
+                            <h4 class="font-weight-light pl-2 d-inline-block" style="margin: 0px;">Personal Website v1</h4>
+                            <p class="duration ml-3">July - August 2019</p>
+                            <a href="https://github.com/Akshantjain/v1" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="http://akshantjain.me/v1/" target="_blank"><div class="img2 external"></div></a>
+                        </div>
+                        <div class="container project-description minimize">
+                            <div class="description text-justify">
+                                <ul>
+                                    <li>The project is the first version of my personal website.</li>
+                                    <li>The wesite was my first step towards web development and web design.</li>
+                                    <li>The website was made using the HTML, CSS and a bit of JavaScript</li>
+                                    <li>The website was hosted and deployed using GitHub Pages.</li>
+                                    <li>The brand new version (current) of my website is now in public.</li>
+                                </ul>
+                            </div>
+                    
+                            <div class="mb-4 ml-3">
+                                <p class="m-0 mb-1 p-0 text-left"><span class="fa fa-tools px-1 "></span>Hardware and Concepts used:</p>
+                                <div class="horizontal-scroll px-2">
+                                    <a target="_blank" href="https://learn.sparkfun.com/tutorials/what-is-an-arduino/all">Arduino UNO
+                                        (3)</a>
+                                    <a target="_blank" href="https://www.arduino.cc/en/Tutorial/MasterWriter">I2C
+                                        Communication</a>
+                                    <a target="_blank" href="https://learn.adafruit.com/lesson-0-getting-started/breadboard">
+                                        BreadBoard (3)</a>
+                                    <a target="_blank"
+                                        href="https://learn.pimoroni.com/tutorial/170pt-projects/anatomy-of-a-mini-breadboard">
+                                        Mini BreadBoard (1)</a>
+                                    <a target="_blank" href="https://en.wikipedia.org/wiki/Nine-volt_battery"> Batteries (3)</a>
+                                    <a target="_blank" href="https://www.arduino.cc/en/Tutorial/HelloWorld"> 16x2 LCD Display
+                                        (3)</a>
+                                    <a target="_blank" href="https://www.arduino.cc/en/tutorial/blink"> LED Lights (4)</a>
+                                    <a target="_blank"
+                                        href="https://www.instructables.com/id/How-to-use-a-photoresistor-or-photocell-Arduino-Tu/">
+                                        Photoresistor (1)</a>
+                                    <a target="_blank" href="https://www.arduino.cc/en/tutorial/potentiometer"> Potentiometer
+                                        (3)</a>
+                                    <a target="_blank" href="https://www.arduino.cc/en/tutorial/button"> Pin Buttons (2)</a>
+                                    <a target="_blank"
+                                        href="https://www.tutorialspoint.com/arduino/arduino_ultrasonic_sensor.htm">Ultrasonic
+                                        Sensor (1)</a>
+                                    <a target="_blank" href="https://playground.arduino.cc/Code/Keypad/">4x4 Keypad (1)</a>
+                                    <a target="_blank"
+                                        href="https://create.arduino.cc/projecthub/Aritro/smoke-detection-using-mq-2-gas-sensor-79c54a">Smoke
+                                        Sensor (1)</a>
+                                    <a target="_blank"
+                                        href="https://create.arduino.cc/projecthub/SURYATEJA/use-a-buzzer-module-piezo-speaker-using-arduino-uno-89df45">
+                                        Buzzers (3)</a>
+                                    <a target="_blank" href="https://www.arduino.cc/en/reference/wire"> Connecting Wires
+                                        (~40)</a>
+                                    <a target="_blank" href="https://learn.adafruit.com/adafruit-arduino-lesson-2-leds/resistors"> Resistors
+                                        (8)</a>
+                                </div>
+                            </div>
+                            <div class="mb-4 ml-3">
+                                <p class="m-0 mb-1 p-0 text-left"><span class="px-1 fa fa-file-alt"></span>Project Documents:</p>
+                                <div class="horizontal-scroll px-2">
+                                    <a href="http://bit.ly/2SZ3C83" target="_blank">Initial Team and Idea</a>
+                                    <a href="http://bit.ly/3c8AoeG" target="_blank">Team and Project Contract</a>
+                                    <a href="http://bit.ly/2wIGSAx" target="_blank">Updated Design Document</a>
+                                    <a href="http://bit.ly/2SY0FEQ" target="_blank">Project Presentation</a>
+                                    <a href="http://bit.ly/2PrJo4V" target="_blank">Final Design Document</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row container each pt-3 pb-2 px-5 clickable-section" onclick="expandFunction(4)">
+                        <div class="container">
                             <div class="img game ml-4 mr-4"></div>
                             <h4 class="font-weight-light pl-2 d-inline-block" style="margin: 0px;">Tic Tac Toe Game</h4>
                             <p class="duration ml-3">November 2019</p>
-                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/Akshantjain/Tic-Tac-Toe-Game" target="_blank"><i class="fab fa-github"></i></a>
                         </div>
-                        <div id="home_security" class="container project-description minimize">
+                        <div class="container project-description minimize">
                             <div class="description text-justify">
                                 <ul>
-                                    <li>This project is a part of <em>Computer Design Course</em> (CS 362) of UIC from <em>Fall 2019</em>
-                                        Semester.
-                                    </li>
-                                    <li>This was a group project of three members. </li>
-                                    <li>The main idea of the project was to design and create a prototype of home security system.</li>
-                                    <li>The prototype is able to detect threats which could take place in a house in your absence.</li>
-                                    <li>Potential threats which system could detect includes theft, invade, smoke, fire, gas andlights.</li>
-                                    <li>The system is protected by a password which is you need to set every time you enable the system.</li>
-                                    <li>The security system is coded in C++ on Arduino and other hardwares.</li>
+                                    <li>This project is a part of <em>Software Design Course</em> (CS 342) of UIC from <em>Fall 2019</em>Semester.</li>
+                                    <li>This was a group project of three members.</li>
+                                    <li>Coded the games in Java and JavaFX using server and client threads.</li>
+                                    <li>Coded the game in multiplayer mode where players play against an algorithm .</li>
+                                    <li>Worked on Front-end and client thread in the projects.</li>
                                 </ul>
-                            </div>
-                        
-                            <div class="mb-4 ml-3">
-                                <p class="m-0 mb-1 p-0 text-left"><span class="fa fa-tools px-1 "></span>Hardware and Concepts used:</p>
-                                <div class="horizontal-scroll px-2">
-                                    <a target="_blank" href="https://learn.sparkfun.com/tutorials/what-is-an-arduino/all">Arduino UNO (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/Tutorial/MasterWriter">I2C
-                                        Communication</a>
-                                    <a target="_blank" href="https://learn.adafruit.com/lesson-0-getting-started/breadboard">
-                                        BreadBoard (3)</a>
-                                    <a target="_blank" href="https://learn.pimoroni.com/tutorial/170pt-projects/anatomy-of-a-mini-breadboard">
-                                        Mini BreadBoard (1)</a>
-                                    <a target="_blank" href="https://en.wikipedia.org/wiki/Nine-volt_battery"> Batteries (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/Tutorial/HelloWorld"> 16x2 LCD Display
-                                        (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/tutorial/blink"> LED Lights (4)</a>
-                                    <a target="_blank"
-                                        href="https://www.instructables.com/id/How-to-use-a-photoresistor-or-photocell-Arduino-Tu/">
-                                        Photoresistor (1)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/tutorial/potentiometer"> Potentiometer
-                                        (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/tutorial/button"> Pin Buttons (2)</a>
-                                    <a target="_blank" href="https://www.tutorialspoint.com/arduino/arduino_ultrasonic_sensor.htm">Ultrasonic
-                                        Sensor (1)</a>
-                                    <a target="_blank" href="https://playground.arduino.cc/Code/Keypad/">4x4 Keypad (1)</a>
-                                    <a target="_blank"
-                                        href="https://create.arduino.cc/projecthub/Aritro/smoke-detection-using-mq-2-gas-sensor-79c54a">Smoke
-                                        Sensor (1)</a>
-                                    <a target="_blank"
-                                        href="https://create.arduino.cc/projecthub/SURYATEJA/use-a-buzzer-module-piezo-speaker-using-arduino-uno-89df45">
-                                        Buzzers (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/reference/wire"> Connecting Wires
-                                        (~40)</a>
-                                    <a target="_blank" href="https://learn.adafruit.com/adafruit-arduino-lesson-2-leds/resistors"> Resistors
-                                        (8)</a>
-                                </div>
-                            </div>
-                            <div class="mb-4 ml-3">
-                                <p class="m-0 mb-1 p-0 text-left"><span class="px-1 fa fa-file-alt"></span>Project Documents:</p>
-                                <div class="horizontal-scroll px-2">
-                                    <a href="http://bit.ly/2SZ3C83" target="_blank">Initial Team and Idea</a>
-                                    <a href="http://bit.ly/3c8AoeG" target="_blank">Team and Project Contract</a>
-                                    <a href="http://bit.ly/2wIGSAx" target="_blank">Updated Design Document</a>
-                                    <a href="http://bit.ly/2SY0FEQ" target="_blank">Project Presentation</a>
-                                    <a href="http://bit.ly/2PrJo4V" target="_blank">Final Design Document</a>
-                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="d-none row container each pt-4 pb-3 px-5">
-                        <div class="container project-headings" onclick="expandFunction(4)">
-                            <div class="img game ml-4 mr-4"></div>
-                            <h4 class="font-weight-light pl-2 d-inline-block" style="margin: 0px;">Rock Paper Scissors Game</h4>
-                            <p class="duration ml-3">October - November 2019</p>
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div id="home_security" class="container project-description minimize">
-                            <div class="description text-justify">
-                                <ul>
-                                    <li>This project is a part of <em>Computer Design Course</em> (CS 362) of UIC from <em>Fall 2019</em>
-                                        Semester.
-                                    </li>
-                                    <li>This was a group project of three members. </li>
-                                    <li>The main idea of the project was to design and create a prototype of home security system.</li>
-                                    <li>The prototype is able to detect threats which could take place in a house in your absence.</li>
-                                    <li>Potential threats which system could detect includes theft, invade, smoke, fire, gas andlights.</li>
-                                    <li>The system is protected by a password which is you need to set every time you enable the system.</li>
-                                    <li>The security system is coded in C++ on Arduino and other hardwares.</li>
-                                </ul>
-                            </div>
-                        
-                            <div class="mb-4 ml-3">
-                                <p class="m-0 mb-1 p-0 text-left"><span class="fa fa-tools px-1 "></span>Hardware and Concepts used:</p>
-                                <div class="horizontal-scroll px-2">
-                                    <a target="_blank" href="https://learn.sparkfun.com/tutorials/what-is-an-arduino/all">Arduino UNO (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/Tutorial/MasterWriter">I2C
-                                        Communication</a>
-                                    <a target="_blank" href="https://learn.adafruit.com/lesson-0-getting-started/breadboard">
-                                        BreadBoard (3)</a>
-                                    <a target="_blank" href="https://learn.pimoroni.com/tutorial/170pt-projects/anatomy-of-a-mini-breadboard">
-                                        Mini BreadBoard (1)</a>
-                                    <a target="_blank" href="https://en.wikipedia.org/wiki/Nine-volt_battery"> Batteries (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/Tutorial/HelloWorld"> 16x2 LCD Display
-                                        (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/tutorial/blink"> LED Lights (4)</a>
-                                    <a target="_blank"
-                                        href="https://www.instructables.com/id/How-to-use-a-photoresistor-or-photocell-Arduino-Tu/">
-                                        Photoresistor (1)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/tutorial/potentiometer"> Potentiometer
-                                        (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/tutorial/button"> Pin Buttons (2)</a>
-                                    <a target="_blank" href="https://www.tutorialspoint.com/arduino/arduino_ultrasonic_sensor.htm">Ultrasonic
-                                        Sensor (1)</a>
-                                    <a target="_blank" href="https://playground.arduino.cc/Code/Keypad/">4x4 Keypad (1)</a>
-                                    <a target="_blank"
-                                        href="https://create.arduino.cc/projecthub/Aritro/smoke-detection-using-mq-2-gas-sensor-79c54a">Smoke
-                                        Sensor (1)</a>
-                                    <a target="_blank"
-                                        href="https://create.arduino.cc/projecthub/SURYATEJA/use-a-buzzer-module-piezo-speaker-using-arduino-uno-89df45">
-                                        Buzzers (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/reference/wire"> Connecting Wires
-                                        (~40)</a>
-                                    <a target="_blank" href="https://learn.adafruit.com/adafruit-arduino-lesson-2-leds/resistors"> Resistors
-                                        (8)</a>
-                                </div>
-                            </div>
-                            <div class="mb-4 ml-3">
-                                <p class="m-0 mb-1 p-0 text-left"><span class="px-1 fa fa-file-alt"></span>Project Documents:</p>
-                                <div class="horizontal-scroll px-2">
-                                    <a href="http://bit.ly/2SZ3C83" target="_blank">Initial Team and Idea</a>
-                                    <a href="http://bit.ly/3c8AoeG" target="_blank">Team and Project Contract</a>
-                                    <a href="http://bit.ly/2wIGSAx" target="_blank">Updated Design Document</a>
-                                    <a href="http://bit.ly/2SY0FEQ" target="_blank">Project Presentation</a>
-                                    <a href="http://bit.ly/2PrJo4V" target="_blank">Final Design Document</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row container each pt-4 pb-3 px-5">
-                        <div class="container project-headings" onclick="expandFunction(5)">
+                    <div class="row container each pt-3 pb-2 px-5 clickable-section" onclick="expandFunction(5)">
+                        <div class="container">
                             <div class="img game ml-4 mr-4"></div>
                             <h4 class="font-weight-light pl-2 d-inline-block" style="margin: 0px;">Baccarat Game</h4>
                             <p class="duration ml-3">September 2019</p>
-                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/Akshantjain/Baccarat-Game" target="_blank"><i class="fab fa-github"></i></a>
                         </div>
-                        <div id="home_security" class="container project-description minimize">
+                        <div class="container project-description minimize">
                             <div class="description text-justify">
                                 <ul>
                                     <li>This project is a part of <em>Computer Design Course</em> (CS 362) of UIC from <em>Fall 2019</em>
@@ -594,254 +524,33 @@
                                     <li>The security system is coded in C++ on Arduino and other hardwares.</li>
                                 </ul>
                             </div>
-                        
-                            <div class="mb-4 ml-3">
-                                <p class="m-0 mb-1 p-0 text-left"><span class="fa fa-tools px-1 "></span>Hardware and Concepts used:</p>
-                                <div class="horizontal-scroll px-2">
-                                    <a target="_blank" href="https://learn.sparkfun.com/tutorials/what-is-an-arduino/all">Arduino UNO (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/Tutorial/MasterWriter">I2C
-                                        Communication</a>
-                                    <a target="_blank" href="https://learn.adafruit.com/lesson-0-getting-started/breadboard">
-                                        BreadBoard (3)</a>
-                                    <a target="_blank" href="https://learn.pimoroni.com/tutorial/170pt-projects/anatomy-of-a-mini-breadboard">
-                                        Mini BreadBoard (1)</a>
-                                    <a target="_blank" href="https://en.wikipedia.org/wiki/Nine-volt_battery"> Batteries (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/Tutorial/HelloWorld"> 16x2 LCD Display
-                                        (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/tutorial/blink"> LED Lights (4)</a>
-                                    <a target="_blank"
-                                        href="https://www.instructables.com/id/How-to-use-a-photoresistor-or-photocell-Arduino-Tu/">
-                                        Photoresistor (1)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/tutorial/potentiometer"> Potentiometer
-                                        (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/tutorial/button"> Pin Buttons (2)</a>
-                                    <a target="_blank" href="https://www.tutorialspoint.com/arduino/arduino_ultrasonic_sensor.htm">Ultrasonic
-                                        Sensor (1)</a>
-                                    <a target="_blank" href="https://playground.arduino.cc/Code/Keypad/">4x4 Keypad (1)</a>
-                                    <a target="_blank"
-                                        href="https://create.arduino.cc/projecthub/Aritro/smoke-detection-using-mq-2-gas-sensor-79c54a">Smoke
-                                        Sensor (1)</a>
-                                    <a target="_blank"
-                                        href="https://create.arduino.cc/projecthub/SURYATEJA/use-a-buzzer-module-piezo-speaker-using-arduino-uno-89df45">
-                                        Buzzers (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/reference/wire"> Connecting Wires
-                                        (~40)</a>
-                                    <a target="_blank" href="https://learn.adafruit.com/adafruit-arduino-lesson-2-leds/resistors"> Resistors
-                                        (8)</a>
-                                </div>
-                            </div>
-                            <div class="mb-4 ml-3">
-                                <p class="m-0 mb-1 p-0 text-left"><span class="px-1 fa fa-file-alt"></span>Project Documents:</p>
-                                <div class="horizontal-scroll px-2">
-                                    <a href="http://bit.ly/2SZ3C83" target="_blank">Initial Team and Idea</a>
-                                    <a href="http://bit.ly/3c8AoeG" target="_blank">Team and Project Contract</a>
-                                    <a href="http://bit.ly/2wIGSAx" target="_blank">Updated Design Document</a>
-                                    <a href="http://bit.ly/2SY0FEQ" target="_blank">Project Presentation</a>
-                                    <a href="http://bit.ly/2PrJo4V" target="_blank">Final Design Document</a>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
-                    <div class="row container each pt-4 pb-3 px-5">
-                        <div class="container project-headings" onclick="expandFunction(6)">
+                    <div class="row container each pt-3 pb-2 px-5 clickable-section" onclick="expandFunction(6)">
+                        <div class="container">
                             <div class="img folder ml-4 mr-4"></div>
                             <h4 class="font-weight-light pl-2 d-inline-block" style="margin: 0px;">More Projects</h4>
                         </div>
-                        <div id="home_security" class="container project-description minimize">
+                        <div class="container project-description minimize">
                             <div class="description text-justify">
                                 <ul>
-                                    <li>This project is a part of <em>Computer Design Course</em> (CS 362) of UIC from <em>Fall 2019</em>
-                                        Semester.
-                                    </li>
-                                    <li>This was a group project of three members. </li>
-                                    <li>The main idea of the project was to design and create a prototype of home security system.</li>
-                                    <li>The prototype is able to detect threats which could take place in a house in your absence.</li>
-                                    <li>Potential threats which system could detect includes theft, invade, smoke, fire, gas andlights.</li>
-                                    <li>The system is protected by a password which is you need to set every time you enable the system.</li>
-                                    <li>The security system is coded in C++ on Arduino and other hardwares.</li>
                                 </ul>
-                            </div>
-                        
-                            <div class="mb-4 ml-3">
-                                <p class="m-0 mb-1 p-0 text-left"><span class="fa fa-tools px-1 "></span>Hardware and Concepts used:</p>
-                                <div class="horizontal-scroll px-2">
-                                    <a target="_blank" href="https://learn.sparkfun.com/tutorials/what-is-an-arduino/all">Arduino UNO (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/Tutorial/MasterWriter">I2C
-                                        Communication</a>
-                                    <a target="_blank" href="https://learn.adafruit.com/lesson-0-getting-started/breadboard">
-                                        BreadBoard (3)</a>
-                                    <a target="_blank" href="https://learn.pimoroni.com/tutorial/170pt-projects/anatomy-of-a-mini-breadboard">
-                                        Mini BreadBoard (1)</a>
-                                    <a target="_blank" href="https://en.wikipedia.org/wiki/Nine-volt_battery"> Batteries (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/Tutorial/HelloWorld"> 16x2 LCD Display
-                                        (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/tutorial/blink"> LED Lights (4)</a>
-                                    <a target="_blank"
-                                        href="https://www.instructables.com/id/How-to-use-a-photoresistor-or-photocell-Arduino-Tu/">
-                                        Photoresistor (1)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/tutorial/potentiometer"> Potentiometer
-                                        (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/tutorial/button"> Pin Buttons (2)</a>
-                                    <a target="_blank" href="https://www.tutorialspoint.com/arduino/arduino_ultrasonic_sensor.htm">Ultrasonic
-                                        Sensor (1)</a>
-                                    <a target="_blank" href="https://playground.arduino.cc/Code/Keypad/">4x4 Keypad (1)</a>
-                                    <a target="_blank"
-                                        href="https://create.arduino.cc/projecthub/Aritro/smoke-detection-using-mq-2-gas-sensor-79c54a">Smoke
-                                        Sensor (1)</a>
-                                    <a target="_blank"
-                                        href="https://create.arduino.cc/projecthub/SURYATEJA/use-a-buzzer-module-piezo-speaker-using-arduino-uno-89df45">
-                                        Buzzers (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/reference/wire"> Connecting Wires
-                                        (~40)</a>
-                                    <a target="_blank" href="https://learn.adafruit.com/adafruit-arduino-lesson-2-leds/resistors"> Resistors
-                                        (8)</a>
-                                </div>
-                            </div>
-                            <div class="mb-4 ml-3">
-                                <p class="m-0 mb-1 p-0 text-left"><span class="px-1 fa fa-file-alt"></span>Project Documents:</p>
-                                <div class="horizontal-scroll px-2">
-                                    <a href="http://bit.ly/2SZ3C83" target="_blank">Initial Team and Idea</a>
-                                    <a href="http://bit.ly/3c8AoeG" target="_blank">Team and Project Contract</a>
-                                    <a href="http://bit.ly/2wIGSAx" target="_blank">Updated Design Document</a>
-                                    <a href="http://bit.ly/2SY0FEQ" target="_blank">Project Presentation</a>
-                                    <a href="http://bit.ly/2PrJo4V" target="_blank">Final Design Document</a>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <div class="my-4">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active" id="home_security">
-                        <div class="carousel-caption d-none d-md-block"  style="top: 0;">
-                            <div class="container">
-                                <a class="repo-button" href="https://github.com/Akshantjain/Home-Security-System/tree/master/code" target="_blank">
-                                    <span class="fa fa-code pr-2 py-2 mr-1" style="border-right: 0.1rem solid #64a19d;"></span>
-                                    CODE
-                                </a>
-                                <a class="repo-button mr-3" href="https://github.com/Akshantjain/Home-Security-System/tree/master/code" target="_blank">
-                                    <span class="fa fa-shopping-cart pr-2 py-2 mr-1" style="border-right: 0.1rem solid #64a19d;"></span>
-                                    ARDUINO KIT
-                                </a>
-                            </div>
-                            <h3 class="titles">Home Security System</h3>
-                            <p class="duration pr-5 mr-4">September - December 2019</p>
-                            <div class="description text-justify">
-                                <ul>
-                                    <li>This project is a part of <em>Computer Design Course</em> (CS 362) of UIC from <em>Fall 2019</em> Semester.</li>
-                                    <li>This was a group project of three members. </li>
-                                    <li>The main idea of the project was to design and create a prototype of home security system.</li>
-                                    <li>The prototype is able to detect threats which could take place in a house in your absence.</li>
-                                    <li>Potential threats which system could detect includes theft, invade, smoke, fire, gas andlights.</li>
-                                    <li>The system is protected by a password which is you need to set every time you enable the system.</li>
-                                    <li>The security system is coded in C++ on Arduino and other hardwares.</li>
-                                </ul>
-                            </div>
-
-                            <div class="mb-4 ml-3">
-                                <p class="m-0 mb-1 p-0 text-left"><span class="fa fa-tools px-1 "></span>Hardware and Concepts used:</p>
-                                <div class="horizontal-scroll px-2">
-                                    <a target="_blank" href="https://learn.sparkfun.com/tutorials/what-is-an-arduino/all">Arduino UNO (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/Tutorial/MasterWriter">I2C
-                                        Communication</a>
-                                    <a target="_blank" href="https://learn.adafruit.com/lesson-0-getting-started/breadboard">
-                                        BreadBoard (3)</a>
-                                    <a target="_blank" href="https://learn.pimoroni.com/tutorial/170pt-projects/anatomy-of-a-mini-breadboard">
-                                        Mini BreadBoard (1)</a>
-                                    <a target="_blank" href="https://en.wikipedia.org/wiki/Nine-volt_battery"> Batteries (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/Tutorial/HelloWorld"> 16x2 LCD Display
-                                        (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/tutorial/blink"> LED Lights (4)</a>
-                                    <a target="_blank" href="https://www.instructables.com/id/How-to-use-a-photoresistor-or-photocell-Arduino-Tu/">
-                                        Photoresistor (1)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/tutorial/potentiometer"> Potentiometer
-                                        (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/tutorial/button"> Pin Buttons (2)</a>
-                                    <a target="_blank" href="https://www.tutorialspoint.com/arduino/arduino_ultrasonic_sensor.htm">Ultrasonic
-                                        Sensor (1)</a>
-                                    <a target="_blank" href="https://playground.arduino.cc/Code/Keypad/">4x4 Keypad (1)</a>
-                                    <a target="_blank"
-                                        href="https://create.arduino.cc/projecthub/Aritro/smoke-detection-using-mq-2-gas-sensor-79c54a">Smoke
-                                        Sensor (1)</a>
-                                    <a target="_blank"
-                                        href="https://create.arduino.cc/projecthub/SURYATEJA/use-a-buzzer-module-piezo-speaker-using-arduino-uno-89df45">
-                                        Buzzers (3)</a>
-                                    <a target="_blank" href="https://www.arduino.cc/en/reference/wire"> Connecting Wires
-                                        (~40)</a>
-                                    <a target="_blank" href="https://learn.adafruit.com/adafruit-arduino-lesson-2-leds/resistors"> Resistors
-                                        (8)</a>
-                                </div>
-                            </div>
-                            <div class="mb-4 ml-3">
-                                <p class="m-0 mb-1 p-0 text-left"><span class="px-1 fa fa-file-alt"></span>Project Documents:</p>
-                                <div class="horizontal-scroll px-2">
-                                    <a href="http://bit.ly/2SZ3C83" target="_blank">Initial Team and Idea</a>
-                                    <a href="http://bit.ly/3c8AoeG" target="_blank">Team and Project Contract</a>
-                                    <a href="http://bit.ly/2wIGSAx" target="_blank">Updated Design Document</a>
-                                    <a href="http://bit.ly/2SY0FEQ" target="_blank">Project Presentation</a>
-                                    <a href="http://bit.ly/2PrJo4V" target="_blank">Final Design Document</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item" id="home_security">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Second Slide</h3>
-                            <p class="duration">This is a description for the second slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item" id="home_security">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Third Slide</h3>
-                            <p>This is a description for the third slide.</p>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>   -->
-
-        <div class="container d-flex h-25 align-items-end" id="">
-            <div class="mx-auto text-center skills mt-1" id="scroll">
-                <a href="#experience" class="btn btn-primary bg-transparent js-scroll-trigger">
-                    <span></span>
-                    <p class="shining">Experience</p>
-                </a>
-            </div>
-        </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience-section contents ">
-        <div id="container" class="container-fluid">
-            <h1 class="text-left text-uppercase heads mb-3">Experience</h1>
-        </div>
-        <div class="container d-flex h-25 align-items-end">
-            <div class="mx-auto text-center skills mt-1" id="scroll">
-                <a href="#resume" class="btn btn-primary bg-transparent js-scroll-trigger">
-                    <span></span>
-                    <p class="shining">Resume</p>
-                </a>
-            </div>
-        </div>
+    <section id="resume">
+        <a class="block-btn" href="https://www.github.com/akshantjain" target="_blank"> <span class="text">View my full
+                resume</span>
+            <img class="icon" src="img/download.png" alt="download resume">
+        </a>
     </section>
-
+    
     <!-- Signup Section -->
     <!-- <section id="signup" class="signup-section">
         <div class="container">
@@ -979,9 +688,8 @@
     <section>
         <!-- Bootstrap core JavaScript -->
         <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
-            </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
         
         <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
@@ -995,17 +703,9 @@
             </script>
         
         <!-- Custom scripts for this template -->
+        <!-- <script type="text/javascript" src="js/skrollr.min.js"></script> -->
+
         <script src="js/script.js"></script>
-        <script src="js/navbar.js"></script>
-
-        <script type="text/javascript" src="js/skrollr.min.js"></script>
-        <script type="text/javascript">
-            skrollr.init({
-                forceHeight: false
-            });
-        </script>
-
-        <script src="js/projects.js"></script>
 
     </section>
 
