@@ -7,7 +7,7 @@
 .masthead {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     min-height: 35rem;
     padding: 15rem 0;
     background: url(../img/header3.jpg);
@@ -30,16 +30,20 @@
     animation-duration: 1.5s;
     animation-delay: .5s;
     animation-fill-mode: forwards;
+    transition: height 1s ;
 }
 
+.headLoad {
+    height: 8rem !important;
+}
 
 .masthead h2 {
-    max-width: 20rem;
-    font-size:0rem;
+    /* max-width: 20rem; */
+    font-size: 1.25rem;
     animation-duration: 1.5s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    visibility: hidden;
+    /* visibility: hidden;  */
 
 }
 
@@ -47,6 +51,10 @@
     .masthead h1 {
         font-size: 2.5em;
         letter-spacing: 0.4rem;
+    }
+
+    .masthead h2 {
+        font-size: 0.85rem;
     }
 }
 
@@ -61,6 +69,10 @@
         height: auto;
         width: auto;
     }
+
+    .masthead h2 {
+        font-size: 0.985rem;
+    }
 }
 
 @media (min-width: 768px) {
@@ -69,11 +81,19 @@
         line-height:4rem;
     }
 
+    .masthead h2 {
+        font-size: 1.15rem;
+    }
+
 }
 
 @media (max-width: 408px) {
     .masthead h1 {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
+    }
+
+    .masthead h2 {
+        font-size: 0.85rem;
     }
 
 }
@@ -95,3 +115,31 @@
         font-size:1.25rem
     }
 }
+
+.appearonload {
+    opacity: 0;
+}
+
+@media (max-width: 999px) {
+    .headLoad {
+        height: 6rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .headLoad {
+        height: 4.5rem !important;
+    }
+}
+
+@media (max-width: 549px) {
+    .headLoad {
+        height: 3.5rem !important;
+    }
+}
+
+/* @media (max-width: 410px) {
+    .headLoad {
+        height: 2.75rem !important;
+    }
+} */
